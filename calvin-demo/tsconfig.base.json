@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@libs/backend/api": ["libs/backend/api/src/index.ts"],
+      "@libs/frontend/ui": ["libs/frontend/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
