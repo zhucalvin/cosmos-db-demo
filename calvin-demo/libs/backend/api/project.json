@@ -1,21 +1,21 @@
 {
-  "name": "material",
-  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/common/ui/material/src",
+  "name": "api",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/backend/api/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/common/ui/material/**/*.ts"]
+        "lintFilePatterns": ["libs/backend/api/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/common/ui/material/jest.config.ts",
+        "jestConfig": "libs/backend/api/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

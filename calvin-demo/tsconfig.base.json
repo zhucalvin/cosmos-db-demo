@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@libs/common/ui/material": ["libs/common/ui/material/src/index.ts"]
+      "@libs/backend/api": ["libs/backend/api/src/index.ts"],
+      "@libs/frontend/ui": ["libs/frontend/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

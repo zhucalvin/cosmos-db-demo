@@ -4,7 +4,6 @@ import {
   withEnabledBlockingInitialNavigation,
 } from '@angular/router';
 import { appRoutes } from './app.routes';
-import { MaterialModule } from '@libs/common/ui/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import {provideHttpClient} from '@angular/common/http';
@@ -16,7 +15,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimations(),
     provideHttpClient(),
-    importProvidersFrom(CommonModule, BrowserAnimationsModule, MaterialModule, MatNativeDateModule),
+    importProvidersFrom(CommonModule, BrowserAnimationsModule, MatNativeDateModule),
     provideRouter(appRoutes, withEnabledBlockingInitialNavigation())
   ],
 };
