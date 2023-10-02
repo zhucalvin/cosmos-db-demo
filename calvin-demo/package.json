@@ -6,7 +6,7 @@
     "ui:build": "nx run web-ui:build",
     "ui:serve": "nx run web-ui:serve --port 4200",
     "api:build": "nx run nosql-api:build",
-    "api:serve": "nx run nosql-api:serve"    
+    "api:serve": "nx run nosql-api:serve"
   },
   "private": true,
   "dependencies": {
@@ -20,11 +20,15 @@
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
+    "@azure/cosmos": "^4.0.0",
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "@nx/angular": "16.9.1",
     "axios": "^1.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
