@@ -1,11 +1,8 @@
 import { plainToInstance } from 'class-transformer';
-import { IsNotEmpty, IsInt, validateSync, ValidateIf } from 'class-validator';
+import { IsNotEmpty, validateSync } from 'class-validator';
 import { Logger } from '@nestjs/common';
 
 class Configuration {
-  @IsNotEmpty({ message: 'Environment variable: ENVIRONMENT is missing' })
-  ENVIRONMENT: string;
-
   @IsNotEmpty({ message: 'Azure Cosmos DB endpoint variable: AZURE_COSMOS_DB_ENDPOINT is missing' })
   AZURE_COSMOS_DB_ENDPOINT: string;
 
